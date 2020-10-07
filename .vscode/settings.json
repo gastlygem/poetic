@@ -1,3 +1,4 @@
 {
-    "python.pythonPath": "d:\\code\\poetic\\venv\\Scripts\\python.exe"
+    "python.pythonPath": "d:\\code\\poetic\\venv\\Scripts\\python.exe",
+    "python.formatting.provider": "black"
 }
