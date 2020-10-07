@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h1>添加诗歌</h1>
+<form action="" method="POST" novalidate>
+    {{ form.hidden_tag() }}
+    <p>
+        {{ form.title.label }}<br>
+        {{ form.title(size=32) }}
+    </p>
+    <p>
+        {{ form.poet.label }}<br>
+        {{ form.poet }}
+    </p>
+    <p>
+        {{ form.poem.label }}<br>
+        {{ form.poem(size=500) }}
+    </p>
+    <p>{{ form.submit() }}</p>
+</form>
+{% endblock %}
