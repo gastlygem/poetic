@@ -1,5 +1,5 @@
 from app.forms import PoemForm
-from flask import render_template
+from flask import redirect, render_template
 from app import app
 
 from data import poems, poets
@@ -17,4 +17,7 @@ def index():
 @app.route("/add_poem", methods=["GET", "POST"])
 def add_poem():
     form = PoemForm()
+    if form.validate_on_submit():
+        poems.append({"title": form.title.data, "poem": form.poem.data, "poet_id": int(form.poet.data)})
+        return redirect('/index')
     return render_template("add_poem.html", title="添加诗", form=form)

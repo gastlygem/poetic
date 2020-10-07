@@ -6,15 +6,24 @@
     {{ form.hidden_tag() }}
     <p>
         {{ form.title.label }}<br>
-        {{ form.title(size=32) }}
+        {{ form.title(size=32) }}<br>
+        {% for error in form.title.errors %}
+        <span style="color: red;">[{{ error }}]</span>
+        {% endfor %}
     </p>
     <p>
         {{ form.poet.label }}<br>
-        {{ form.poet }}
+        {{ form.poet }}<br>
+        {% for error in form.poet.errors %}
+        <span style="color: red;">[{{ error }}]</span>
+        {% endfor %}
     </p>
     <p>
         {{ form.poem.label }}<br>
-        {{ form.poem(size=500) }}
+        {{ form.poem(size=500) }}<br>
+        {% for error in form.poem.errors %}
+        <span style="color: red;">[{{ error }}]</span>
+        {% endfor %}
     </p>
     <p>{{ form.submit() }}</p>
 </form>
