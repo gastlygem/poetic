@@ -10,7 +10,7 @@
 
 <body>
     <nav>
-        古诗网: <a href="/index">首页</a> | <a href="/add_poem">添加诗歌</a>
+        古诗网: <a href="{{ url_for('index') }}">首页</a> | <a href="{{ url_for('add_poem') }}">添加诗歌</a>
     </nav>
     <hr>
     {% with messages = get_flashed_messages() %}

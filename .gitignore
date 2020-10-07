@@ -140,4 +140,4 @@ cython_debug/
 # Project specific
 app.db
 poetic.log
-.vscode*
+.vscode/
