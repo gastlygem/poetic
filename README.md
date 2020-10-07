@@ -22,9 +22,9 @@
   * 导入路由
 * 在 `app` 文件里创建 `route.py`
   * 里边写一个 `index` 函数，让它在路由到 `/` 或者 `/index` 的时候，返回 `Hello, World`。
-* 在根目录创建总入口文件 `poetry.py`
+* 在根目录创建总入口文件 `poetic.py`
 * 在里边导入`app`
-* 设置 FLAKSK_APP 环境变量为 `poetry.py`
+* 设置 FLASK_APP 环境变量为 `poetic.py`
 * 命令行启动 Flask 应用
 
 设置：
