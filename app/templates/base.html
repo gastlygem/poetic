@@ -1,0 +1,19 @@
+<html>
+
+<head>
+    {% if title %}
+    <title>古诗网 - {{title}}</title>
+    {% else %}
+    <title>欢迎来到古诗网</title>
+    {% endif %}
+</head>
+
+<body>
+    <nav>
+        古诗网: <a href="/index">首页</a>
+    </nav>
+    <hr>
+    {% block content %} {% endblock %}
+</body>
+
+</html>

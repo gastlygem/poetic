@@ -1,1 +1,2 @@
 FLASK_APP=poetic.py
+FLASK_ENV=development

@@ -1,0 +1,9 @@
+{% extends "base.html" %}
+
+{% block content %}
+{% for poem in poems %}
+<h2>{{poem.title}}</h2>
+<footer>{{poem.poet.name}}</footer>
+<p>{{poem.poem}}</p>
+{% endfor %}
+{% endblock %}
